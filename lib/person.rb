@@ -43,30 +43,30 @@ class Person
   end
 
   def take_bath
-    self.hygiene += 4
+    self.hygiene += 4 # reader
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
   def work_out
-    self.hygiene -= 3
-    self.happiness += 2
+    self.hygiene -= 3 # reader
+    self.happiness += 2 # reader
     "♪ another one bites the dust ♫"
   end
 
   def call_friend(friend)
-    self.happiness += 3
-    friend.happiness += 3
-    "Hi #{friend.name}! It's #{self.name}. How are you?"
+    self.happiness += 3 # reader
+    friend.happiness += 3 # reader
+    "Hi #{friend.name}! It's #{self.name}. How are you?" # reader
   end
 
   def start_conversation(friend, topic)
     case topic
     when 'politics'
-      self.happiness -= 2
+      self.happiness -= 2 # reader
       friend.happiness -= 2
       "blah blah partisan blah lobbyist"
     when 'weather'
-      self.happiness += 1
+      self.happiness += 1 # reader
       friend.happiness += 1
       "blah blah sun blah rain"
     else
